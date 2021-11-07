@@ -1,14 +1,10 @@
 const Calculate = {
-	sum(inputArray) {
-    
-    //Implementamos la suma de elementos
-    let totalSum = 0;
-    const inputArrayLength = inputArray.length;
-		for (let i = 0; i < inputArrayLength; i++){
-      totalSum += inputArray[i]
+    sum(inputArray) {
+    //Refactoring using .reduce
+      return inputArray.reduce((sum, value) => {
+        return sum + value;
+      })
     }
-    return totalSum
-	}
-}
-
-module.exports = Calculate;
+  }
+  
+  module.exports = Calculate;
