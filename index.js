@@ -1,6 +1,13 @@
 const Calculate = {
-    sum(arr){
-      return 6
+	sum(inputArray) {
+    
+    let totalSum = 0;
+    const inputArrayLength = inputArray.length;
+		for (let i = 0; i < inputArrayLength; i++){
+      totalSum += inputArray[i]
     }
-  }
-  module.exports = Calculate;
+    return totalSum
+	}
+}
+
+module.exports = Calculate;
