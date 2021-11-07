@@ -1,3 +1,7 @@
+//Ex 1: index.js implementation code
+//making .sum() return the same value as the expected result you defined in your test.
+
+
 const Calculate = {
     sum(inputArray) {
       
