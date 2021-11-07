@@ -1,6 +1,7 @@
 const Calculate = {
     sum(inputArray) {
       
+    // 0 case
       if(inputArray.length === 0){
         return 0
       }
