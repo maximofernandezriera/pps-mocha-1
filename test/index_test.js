@@ -14,12 +14,21 @@ describe('Calculate', () => {
     
     it('returns the sum of a four item list', ()=>{
       const expectedResult = 22;
-      const inputArray = [4,5,6,7];
+      const inputArray = [4,6,5,7];
       
       const result = Calculate.sum(inputArray);
       
       assert.equal(result, expectedResult)
       
+    });
+    
+    it('returns zero for an empty array', ()=>{
+      const expectedResult = 0;
+      const inputArray = [];
+      
+      const result = Calculate.sum(inputArray);
+      
+      assert.equal(result, expectedResult)
     });
   });
 });

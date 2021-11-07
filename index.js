@@ -1,6 +1,10 @@
 const Calculate = {
     sum(inputArray) {
-    //Refactoring using .reduce
+      
+      if(inputArray.length === 0){
+        return 0
+      }
+  
       return inputArray.reduce((sum, value) => {
         return sum + value;
       })
@@ -8,3 +12,5 @@ const Calculate = {
   }
   
   module.exports = Calculate;
+  
+  
